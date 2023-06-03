@@ -107,10 +107,10 @@ const next = () => {
   else player = 0;
 };
 
-const random = () => (step = Math.floor(Math.random() * 6) + 1);
+const random = () => Math.floor(Math.random() * 6) + 1;
 
 const drive = () => {
-  random();
+  step = random();
   dir = -1;
 };
 
